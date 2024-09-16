@@ -84,6 +84,7 @@ Git commit --amend   -->  amend the most recent commit
 Git revert   --> revert given commit 
 Git reset  --> delete commit 
 
+- git pull
 
 
 
