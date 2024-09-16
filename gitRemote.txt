@@ -1,0 +1,91 @@
+Git and Github 
+- git init 
+To convert normal folder into git repository (.git folder -> Meta data of git folder). 
+
+- ls 
+It shows list of files present in the folder 
+
+- git status 
+It gives status of repository
+
+- git clone linkURL folderName
+It used to import repository from github to our computer
+
+Life Cycle of a change
+1)Committed repository
+2)Working directory (temp changes)
+3)Staging index (about to commit)
+
+Review a Repo History
+- git log    (git log -1 , git log -3)
+It shows commits and changes history. Username and date.
+
+- git log -p
+It shows details of where the changes made i.e. content which modified.
+
+- git log --online
+It only shows commit id and comment 
+
+- git log --stat
+Shows which file modified.
+
+How to commit
+- git add fileName
+To add old file in staging index 
+Add new file to track
+
+- git commit -m “msg”
+
+ Git commit -am “msg
+Add and commit at a time
+- git add .  => used to add all modified filr but it is not recommonded.
+
+
+If mistakenly we made any change in file and we want to restore the using this command we can restore to Head(the Position where last commit made)
+- git restore fileName 
+
+- git diff 
+To see what changes have been made 
+
+
+.gitignore  Folder 
+The files which we want to ignore which can add into this folder 
+Ex. *.txt  (all files with .txt extension will be ignored)
+But we need to commit .gitignore file
+
+
+Branching, tagging and merging
+Main branch (master)
+Custom branch (quicksort, bubblesort)
+
+- git branch 
+It shows list of all branches 
+
+- git branch quickSort 
+It creates new branch named quichSort 
+
+- git checkout quickSort
+Switched to branch ‘quickSort’
+
+Merging
+1)Go to master branch 
+- git checkout master
+
+- git merge bubblesort
+
+To delete new branch 
+- git branch -d bubblesort
+
+Tagging
+Git tag
+Git stash
+
+Git commit --amend   -->  amend the most recent commit 
+Git revert   --> revert given commit 
+Git reset  --> delete commit 
+
+
+
+
+
+
